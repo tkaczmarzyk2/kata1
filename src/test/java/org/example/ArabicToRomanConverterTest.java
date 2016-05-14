@@ -7,6 +7,12 @@ public class ArabicToRomanConverterTest {
 	ArabicToRomanConverter converter = new ArabicToRomanConverter();
 	
 	@Test
+	public void shouldRepeatASymbol() {
+		assertThat(converter.convert(3)).isEqualTo("III");
+		assertThat(converter.convert(20)).isEqualTo("XX");
+	}
+	
+	@Test
 	public void shouldConvertSingleSymbol() {
 		assertThat(converter.convert(1)).isEqualTo("I");
 		assertThat(converter.convert(5)).isEqualTo("V");
