@@ -10,6 +10,14 @@ public class ArabicToRomanConverterTest {
 	public void shouldRepeatASymbol() {
 		assertThat(converter.convert(3)).isEqualTo("III");
 		assertThat(converter.convert(20)).isEqualTo("XX");
+		assertThat(converter.convert(21)).isEqualTo("XXI");
+		assertThat(converter.convert(22)).isEqualTo("XXII");
+		assertThat(converter.convert(23)).isEqualTo("XXIII");
+		assertThat(converter.convert(12)).isEqualTo("XII");
+		assertThat(converter.convert(14)).isEqualTo("XIV");
+		assertThat(converter.convert(34)).isEqualTo("XXXIV");
+		assertThat(converter.convert(39)).isEqualTo("XXXIX");
+		assertThat(converter.convert(4)).isEqualTo("IV");
 	}
 	
 	@Test
