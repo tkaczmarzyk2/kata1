@@ -20,6 +20,7 @@ public class ArabicToRomanConverter {
 		slownik.put(5, "V");
 		slownik.put(10, "X");
 		slownik.put(50, "L");
+		slownik.put(100, "C");
 	}
 
 	public String convert(int arabic) {
