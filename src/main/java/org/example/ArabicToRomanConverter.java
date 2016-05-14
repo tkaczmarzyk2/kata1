@@ -21,6 +21,7 @@ public class ArabicToRomanConverter {
 		slownik.put(10, "X");
 		slownik.put(50, "L");
 		slownik.put(100, "C");
+		slownik.put(500, "D");
 	}
 
 	public String convert(int arabic) {
