@@ -3,7 +3,7 @@ package org.example;
 public class ArabicToRomanConverter {
 
 	public String convert(int arabic) {
-		// TODO Auto-generated method stub
+		if(arabic==1) return "I";
 		return null;
 	}
 
