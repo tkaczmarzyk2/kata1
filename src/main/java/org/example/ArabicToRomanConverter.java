@@ -13,6 +13,7 @@ public class ArabicToRomanConverter {
 		mapping.put(5, "V");
 		mapping.put(10, "X");
 		mapping.put(50, "L");
+		mapping.put(100, "c");
 	}
 
 	public String convert(int arabic) {
