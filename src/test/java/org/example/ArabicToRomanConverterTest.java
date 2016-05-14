@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class ArabicToRomanConverterTest {
 
-	ArabicToRomanConverter converter = new ArabicToRomanConverter();
+ArabicToRomanConverter converter = new ArabicToRomanConverter();
 	
 	@Test
 	public void shouldRepeatASymbol() {
@@ -21,5 +21,15 @@ public class ArabicToRomanConverterTest {
 		assertThat(converter.convert(100)).isEqualTo("C");
 		assertThat(converter.convert(500)).isEqualTo("D");
 		assertThat(converter.convert(1000)).isEqualTo("M");
+	}
+	
+	@Test
+	public void shoultRepeat() {
+		assertThat(converter.convert(20)).isEqualTo("XX");
+	}
+	
+	@Test
+	public void shouldCombineDifferentSYmbols() {
+		assertThat(converter.convert(21)).isEqualTo("XXI");
 	}
 }
