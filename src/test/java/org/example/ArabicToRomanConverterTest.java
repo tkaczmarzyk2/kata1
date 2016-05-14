@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class ArabicToRomanConverterTest {
 
-	ArabicToRomanConverter converter = new ArabicToRomanConverter();
+	public ArabicToRomanConverter converter = new ArabicToRomanConverter();
 	
 	@Test
 	public void shouldConvertSingleSymbol() {
