@@ -22,4 +22,14 @@ public class ArabicToRomanConverterTest {
 		assertThat(converter.convert(500)).isEqualTo("D");
 		assertThat(converter.convert(1000)).isEqualTo("M");
 	}
+	
+	@Test
+	public void shoultRepeat() {
+		assertThat(converter.convert(20)).isEqualTo("XX");
+	}
+	
+	@Test
+	public void shouldCombineDifferentSYmbols() {
+		assertThat(converter.convert(21)).isEqualTo("XXI");
+	}
 }
