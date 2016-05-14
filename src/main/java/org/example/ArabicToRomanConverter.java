@@ -14,8 +14,6 @@ public class ArabicToRomanConverter {
 	private void insertValues() {
 
 		slownik.put(1, "I");
-		slownik.put(2, "II");
-		slownik.put(3, "III");
 		slownik.put(4, "IV");
 		slownik.put(5, "V");
 		slownik.put(10, "X");
