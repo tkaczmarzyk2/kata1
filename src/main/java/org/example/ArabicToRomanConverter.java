@@ -1,25 +1,32 @@
 package org.example;
 
 import java.util.HashMap;
-import java.util.Map;
+
 
 public class ArabicToRomanConverter {
 
-	private Map<Integer, String> mapping = new HashMap<>();
+	private HashMap<Integer, String> slownik = new HashMap<>();
 
 	public ArabicToRomanConverter() {
-		super();
-		mapping.put(1, "I");
-		mapping.put(5, "V");
-		mapping.put(10, "X");
-		mapping.put(50, "L");
-		mapping.put(100, "c");
-		mapping.put(500, "D");
-		mapping.put(1000, "M");
+
+		insertValues();
+	}
+
+	private void insertValues() {
+
+		slownik.put(1, "I");
+		slownik.put(2, "II");
+		slownik.put(3, "III");
+		slownik.put(4, "IV");
+		slownik.put(5, "V");
+		slownik.put(10, "X");
+		slownik.put(50, "L");
+		slownik.put(100, "C");
+		slownik.put(500, "D");
+		slownik.put(1000, "M");
 	}
 
 	public String convert(int arabic) {
-		return mapping.get(arabic);
+		return slownik.get(arabic);
 	}
-
 }
