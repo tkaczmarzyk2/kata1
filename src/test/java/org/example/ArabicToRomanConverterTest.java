@@ -8,8 +8,8 @@ public class ArabicToRomanConverterTest {
 	
 	@Test
 	public void shouldConvertSingleSymbol() {
-		String roman = converter.convert(1);
-		
-		assertThat(roman).isEqualTo("I");
+		assertThat(converter.convert(1)).isEqualTo("I");
+		assertThat(converter.convert(5)).isEqualTo("V");
+		assertThat(converter.convert(10)).isEqualTo("X");
 	}
 }
