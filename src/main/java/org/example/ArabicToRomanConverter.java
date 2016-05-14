@@ -17,7 +17,7 @@ public class ArabicToRomanConverter {
 		slownik.put(2, "II");
 		slownik.put(3, "III");
 		slownik.put(4, "IV");
-		slownik.put(5, "V");
+		slownik.put(5, "v");
 		slownik.put(10, "X");
 		slownik.put(50, "L");
 		slownik.put(100, "C");
