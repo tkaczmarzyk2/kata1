@@ -14,6 +14,7 @@ public class ArabicToRomanConverter {
 		mapping.put(10, "X");
 		mapping.put(50, "L");
 		mapping.put(100, "c");
+		mapping.put(500, "D");
 	}
 
 	public String convert(int arabic) {

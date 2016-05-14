@@ -13,5 +13,6 @@ public class ArabicToRomanConverterTest {
 		assertThat(converter.convert(10)).isEqualTo("X");
 		assertThat(converter.convert(50)).isEqualTo("L");
 		assertThat(converter.convert(100)).isEqualTo("C");
+		assertThat(converter.convert(500)).isEqualTo("D");
 	}
 }
