@@ -1,17 +1,24 @@
 package org.example;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ArabicToRomanConverter {
 
+private Map<Integer,String> myMap = new HashMap<Integer,String>();
+
+public ArabicToRomanConverter(){
+	
+	
+}
 	public String convert(int arabic) {
-		if (arabic == 1) 
-			return "I";
-		 else if (arabic == 5)
-			return "V";
-		else if (arabic == 10)
-			return "X";
-		else
-			return null;
+		myMap.put(1, "I");
+		myMap.put(5, "V");
+		myMap.put(10, "X");
+		
+		return myMap.get(arabic);
+		
 
 	}
-
+ 
 }
