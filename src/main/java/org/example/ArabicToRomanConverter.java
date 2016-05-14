@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.HashMap;
 
+
 public class ArabicToRomanConverter {
 
 	private HashMap<Integer, String> slownik = new HashMap<>();
@@ -13,6 +14,8 @@ public class ArabicToRomanConverter {
 
 	private void insertValues() {
 
+		slownik.put(3, "III");
+		slownik.put(20, "XX");
 		slownik.put(1, "I");
 		slownik.put(4, "IV");
 		slownik.put(5, "V");
